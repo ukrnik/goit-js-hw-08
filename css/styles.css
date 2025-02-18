@@ -1,0 +1,36 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex-basis: calc(33.333% - 16px);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-link {
+    display: block;
+    text-decoration: none;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.basicLightbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
